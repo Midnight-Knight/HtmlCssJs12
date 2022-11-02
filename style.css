@@ -2,6 +2,7 @@
 {
     padding: 0; 
     margin: 0;
+    font-size: 2vmin;
 }
 
 body
@@ -193,3 +194,47 @@ section
     color: white;
 }
 
+/* section-2 */
+
+#section-2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#section-2 > div
+{
+    width: 30vmin;
+    height: 50vmin;
+    background-color: rgb(121, 121, 121);
+    padding-left: 2vmin;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    padding-right: 2vmin;
+    margin: 2vmin;
+    transition: 2s;
+}
+
+#section-2 > div > img
+{
+    width: 15vmin;
+    height: 15vmin;
+}
+
+#section-2 > div > h2
+{
+    color: white;
+}
+
+#section-2 > div > button
+{
+    width: 15vmin;
+    height: 5vmin;
+    background-color: rgb(85, 255, 70);
+    border: 0 solid rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
