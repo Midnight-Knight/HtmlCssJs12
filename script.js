@@ -91,3 +91,91 @@ function textBigdivF(num)
         textBigdiv[num] = false;
     }
 }
+
+/* section-3 */
+
+let cssLine = "width: 15vmin; height: 2vmin; background: linear-gradient(90deg, rgb(93, 0, 255), rgb(247, 0, 255)); border-radius: 2vmin; margin: 0 3vmin; overflow: hidden; transition: 2s; transform: ";
+
+function mouseF(idS)
+{
+    if (idS == "h")
+    {
+        console.log("Наведение есть h");
+        document.getElementById('line').style.cssText = cssLine + "translateX(0vmin);";
+    }
+    else if(idS == "rone")
+    {
+        console.log("Наведение есть r1");
+        document.getElementById('line').style.cssText = cssLine + "translateX(21vmin);";
+    }
+    else if(idS == "rtwo")
+    {
+        console.log("Наведение есть r2");
+        document.getElementById('line').style.cssText = cssLine + "translateX(42vmin);";
+    }
+    else if(idS == "rthree")
+    {
+        console.log("Наведение есть r3");
+        document.getElementById('line').style.cssText = cssLine + "translateX(63vmin);";
+    }
+    else if(idS == "rfour")
+    {
+        console.log("Наведение есть r4");
+        document.getElementById('line').style.cssText = cssLine + "translateX(84vmin);";
+    }
+}
+
+function mouseReturn()
+{
+    console.log("Наведение нету");
+    document.getElementById('line').style.cssText = cssLine + "translateX(-100vmin);";
+}
+
+/* section-4 */
+
+function glass(num)
+{
+    if (num == 1)
+    {
+        document.getElementById('rgbblock').style.opacity = "1";
+        document.getElementById('rgbblock').style.transform = "translateX(-28vmin)";
+        document.getElementById('rgbblock').style.backgroundColor = "red";
+        document.getElementById('rgbblock').style.boxShadow = "0 2vmin 4vmin rgba(255,0,0,0.25), 0 2vmin 2vmin rgba(255,0,0,0.22)";
+    }
+    else if(num == 2)
+    {
+        document.getElementById('rgbblock').style.opacity = "1";
+        document.getElementById('rgbblock').style.transform = "translateX(-14vmin)";
+        document.getElementById('rgbblock').style.backgroundColor = "yellow";
+        document.getElementById('rgbblock').style.boxShadow = "0 2vmin 4vmin rgba(255,255,0,0.25), 0 2vmin 2vmin rgba(255,255,0,0.22)";
+    }
+    else if(num == 3)
+    {
+        document.getElementById('rgbblock').style.opacity = "1";
+        document.getElementById('rgbblock').style.transform = "translateX(0vmin)";
+        document.getElementById('rgbblock').style.backgroundColor = "white";
+        document.getElementById('rgbblock').style.boxShadow = "0 2vmin 4vmin rgba(255,255,255,0.25), 0 2vmin 2vmin rgba(255,255,255,0.22)";
+    }
+    else if(num == 4)
+    {
+        document.getElementById('rgbblock').style.opacity = "1";
+        document.getElementById('rgbblock').style.transform = "translateX(14vmin)";
+        document.getElementById('rgbblock').style.backgroundColor = "green";
+        document.getElementById('rgbblock').style.boxShadow = "0 2vmin 4vmin rgba(0,255,0,0.25), 0 2vmin 2vmin rgba(0,255,0,0.22)";
+    }
+    else if(num == 5)
+    {
+        document.getElementById('rgbblock').style.opacity = "1";
+        document.getElementById('rgbblock').style.transform = "translateX(28vmin)";
+        document.getElementById('rgbblock').style.backgroundColor = "blue";
+        document.getElementById('rgbblock').style.boxShadow = "0 2vmin 4vmin rgba(0,0,255,0.25), 0 2vmin 2vmin rgba(0,0,255,0.22)";
+    }
+}
+
+
+
+function glassReturn()
+{
+    document.getElementById('rgbblock').style.opacity = "0";
+    document.getElementById('rgbblock').style.transform = "translateX(0vmin)";
+}
