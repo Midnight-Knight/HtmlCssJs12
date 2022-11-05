@@ -439,8 +439,8 @@ section
 {
     top: 0vmin;
     left: -5vmin;
-    width: 1vmin;
-    height: 1vmin;
+    width: 2vmin;
+    height: 2vmin;
     animation: bylikbylikzero infinite 1.5s;
 }
 
@@ -448,8 +448,8 @@ section
 {
     top: 17vmin;
     left: 5vmin;
-    width: 1vmin;
-    height: 1vmin;
+    width: 2vmin;
+    height: 2vmin;
     animation: bylikbylik infinite 1.5s;
 }
 
@@ -457,8 +457,8 @@ section
 {
     top: -25vmin;
     left: -15vmin;
-    width: 1.5vmin;
-    height: 1.5vmin;
+    width: 2.5vmin;
+    height: 2.5vmin;
     animation: bylikbylikzero infinite 1.5s;
 }
 
@@ -466,24 +466,24 @@ section
 {
     top: 32vmin;
     left: 23vmin;
-    width: 1.5vmin;
-    height: 1.5vmin;
+    width: 2.5vmin;
+    height: 2.5vmin;
     animation: bylikbylik infinite 1.5s;
 }
 
 #bylik-5
 {
     left: -35vmin;
-    width: 2vmin;
-    height: 2vmin;
+    width: 3vmin;
+    height: 3vmin;
     animation: bylikbylikzero infinite 1.5s;
 }
 
 #bylik-6
 {
     left: 35vmin;
-    width: 2vmin;
-    height: 2vmin;
+    width: 3vmin;
+    height: 3vmin;
     animation: bylikbylik infinite 1.5s;
 }
 
@@ -491,8 +491,8 @@ section
 {
     top: -20vmin;
     left: -65vmin;
-    width: 2.5vmin;
-    height: 2.5vmin;
+    width: 3.5vmin;
+    height: 3.5vmin;
     animation: bylikbylikzero infinite 1.5s;
 }
 
@@ -500,8 +500,8 @@ section
 {
     top: 27vmin;
     left: 65vmin;
-    width: 2.5vmin;
-    height: 2.5vmin;
+    width: 3.5vmin;
+    height: 3.5vmin;
     animation: bylikbylik infinite 1.5s;
 }
 
@@ -608,4 +608,55 @@ section
         border: 0.2vmin solid rgba(255, 0, 195,0);
         transform: scale(0);
     }
+}
+
+/* section-7 */
+
+#section-7 > div
+{
+    width: 42vmin;
+    height: 12vmin;
+    border-radius: 2vmin;
+    background-color: rgb(122, 122, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-7 > div > div
+{
+    width: 32vmin;
+    height: 4vmin;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border: 0.1 solid rgba(0,0,0,0);
+    border-radius: 2vmin;
+}
+
+#dog
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vmin;
+}
+
+#number
+{
+    width: 5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#inputvvod
+{
+    width: 22vmin;
+    border: 0 solid rgba(0,0,0,0);
+}
+
+#inputvvod:focus
+{
+    outline: none;
 }

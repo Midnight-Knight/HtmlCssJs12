@@ -225,3 +225,28 @@ function bylikclick()
     }
     console.log(boolClick);
 }
+
+/* section-7 */
+
+function colorinput()
+{
+    document.getElementById('dog').style.color = "red";
+    document.getElementById('vvod').style.border = "0.1vmin solid red";
+    document.getElementById('number').style.color = "red";
+    document.getElementById('inputvvod').style.color = "red";
+}
+
+function colorreturn()
+{
+    document.getElementById('dog').style.color = "black";
+    document.getElementById('vvod').style.border = "0.1vmin solid rgba(0,0,0,0)";
+    document.getElementById('number').style.color = "black";
+    document.getElementById('inputvvod').style.color = "black";
+}
+
+kolpred = -1;
+function key()
+{
+    let kol = document.getElementById('inputvvod').value.length;
+    document.getElementById('number').innerHTML = "|"+(16-kol);
+}
