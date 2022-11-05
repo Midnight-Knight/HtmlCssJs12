@@ -49,8 +49,8 @@ for (i = 0; i < 3; i++)
     shadow[i] = document.createElement("div");
     text[i].innerHTML = Lorem;
     text[i].className = "shadow";
-    text[i].style.cssText = "transition: 2s; font-size: 2vmin; height: 23vmin; overflow: hidden; margin-bottom: 2vmin; color: white; display: flex; justify-content: center; align-items: flex-end;";
-    shadow[i].style.cssText = "transition: 2s; z-index: 3; position: absolute; height: 7vmin; width: 30vmin; background: linear-gradient(0deg, rgba(121, 121, 121,0.9), rgba(121, 121, 121,0.8), rgba(121, 121, 121,0.7), rgba(121, 121, 121,0.6), rgba(121, 121, 121,0.5), rgba(121, 121, 121,0.4), rgba(121, 121, 121,0.3), rgba(121, 121, 121,0.2), rgba(121, 121, 121,0.1), rgba(121, 121, 121,0));"
+    text[i].style.cssText = "transition: 2s; font-size: 2vmin; height: 23vmin; overflow: hidden; margin-bottom: 2vmin; color: white; display: flex; justify-content: center; align-items: flex-start;";
+    shadow[i].style.cssText = "transition: 2s; z-index: 3; position: absolute; transform: translateY(16vmin); height: 7vmin; width: 30vmin; background: linear-gradient(0deg, rgba(121, 121, 121,0.9), rgba(121, 121, 121,0.8), rgba(121, 121, 121,0.7), rgba(121, 121, 121,0.6), rgba(121, 121, 121,0.5), rgba(121, 121, 121,0.4), rgba(121, 121, 121,0.3), rgba(121, 121, 121,0.2), rgba(121, 121, 121,0.1), rgba(121, 121, 121,0));"
     shadow[i].style.opacity = 1;
 }
 const PCHand = document.getElementsByClassName('Section2Div');
@@ -72,9 +72,10 @@ function textBigdivF(num)
 {
     if(textBigdiv[num] == false)
     {
-        text[num].style.cssText = "transition: 2s; font-size: 2vmin; height: 33vmin; overflow: hidden; margin-bottom: 2vmin; color: white; display: flex; justify-content: center; align-items: flex-end;";
+        text[num].style.cssText = "transition: 2s; font-size: 2vmin; height: 33vmin; overflow: hidden; margin-bottom: 2vmin; color: white; display: flex; justify-content: center; align-items: flex-start;";
         PCdivTextBig[num].style.cssText = "width: 30vmin; height: 60vmin; background-color: rgb(121, 121, 121); padding-left: 2vmin; padding-top: 1vmin; padding-bottom: 1vmin; padding-right: 2vmin; margin: 2vmin; transition: 2s;";
         shadow[num].style.opacity = 0;
+        shadow[num].style.transform = "translateY(26vmin)";
         PCdivTextBigBut[num].innerHTML = "Скрыть";
         PCdivTextBigBut[num].style.background = "rgb(255, 34, 126)";
         PCdivTextBigBut[num].style.color = "white";
@@ -82,9 +83,10 @@ function textBigdivF(num)
     }
     else
     {
-        text[num].style.cssText = "transition: 2s; font-size: 2vmin; height: 23vmin; overflow: hidden; margin-bottom: 2vmin; color: white; display: flex; justify-content: center; align-items: flex-end;";
+        text[num].style.cssText = "transition: 2s; font-size: 2vmin; height: 23vmin; overflow: hidden; margin-bottom: 2vmin; color: white; display: flex; justify-content: center; align-items: flex-start;";
         PCdivTextBig[num].style.cssText = "width: 30vmin; height: 50vmin; background-color: rgb(121, 121, 121); padding-left: 2vmin; padding-top: 1vmin; padding-bottom: 1vmin; padding-right: 2vmin; margin: 2vmin; transition: 2s;";
         shadow[num].style.opacity = 1;
+        shadow[num].style.transform = "translateY(16vmin)";
         PCdivTextBigBut[num].innerHTML = "Подробнее";
         PCdivTextBigBut[num].style.background = "rgb(85, 255, 70)";
         PCdivTextBigBut[num].style.color = "black";
@@ -172,10 +174,54 @@ function glass(num)
     }
 }
 
+/* section-5 */
 
+function openmenu()
+{
+    document.getElementById('menu').style.right = "1%";
+}
+
+function closemenu()
+{
+    document.getElementById('menu').style.right = "-50%";
+}
 
 function glassReturn()
 {
     document.getElementById('rgbblock').style.opacity = "0";
     document.getElementById('rgbblock').style.transform = "translateX(0vmin)";
+}
+
+/* section-6 */
+
+let boolClick = false;
+function bylikclick()
+{
+    let elemBylik = document.querySelectorAll('.bylik');
+    let elemZero = document.querySelectorAll('.zerobylik');
+    if (boolClick == false)
+    {
+        boolClick = true;
+        for (i = 0; i < elemBylik.length; ++i)
+        {
+            elemBylik[i].style.opacity = "1";
+        }
+        for (i = 0; i < elemZero.length; ++i)
+        {
+            elemZero[i].style.opacity = "1";
+        }
+    }
+    else
+    {
+        boolClick = false;
+        for (i = 0; i < elemBylik.length; ++i)
+        {
+            elemBylik[i].style.opacity = "0";
+        }
+        for (i = 0; i < elemZero.length; ++i)
+        {
+            elemZero[i].style.opacity = "0";
+        }
+    }
+    console.log(boolClick);
 }

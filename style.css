@@ -310,3 +310,302 @@ section
     opacity: 0;
     transition: 2s;
 }
+
+/* section-5 */
+
+#buttonmenu
+{
+    width: 15vmin;
+    height: 5vmin;
+    background-color: rgb(73, 216, 60);
+    color: rgb(255, 255, 255);
+    border: 0 solid rgba(0,0,0,0);
+}
+
+#menu
+{
+    width: 40vmin;
+    height: 45vmin;
+    position: fixed;
+    background-color: white;
+    top: 53%;
+    right: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+#menuheadzone
+{
+    background-color: rgb(7, 34, 186);
+    width: 40vmin;
+    height: 5vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuheadzone > *
+{
+    margin: 0 2vmin;
+    color: white;
+}
+
+#menupngzone
+{
+    background-color: rgb(7, 34, 186);
+    width: 40vmin;
+    height: 20vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menupngzone > img
+{
+    width: 15vmin;
+    height: 15vmin;
+}
+
+#menutxtzone
+{
+    width: 40vmin;
+    height: 20vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menutxtzone > *
+{
+    color: black;
+    text-align: center;
+    margin: 1vmin;
+}
+
+#smallclosemenu
+{
+    background-color: rgb(7, 34, 186);
+    color: rgb(255, 255, 255);
+    border: 0 solid rgba(0,0,0,0);
+}
+
+#bigclosemenu
+{
+    width: 12vmin;
+    height: 5vmin;
+    background-color: rgb(7, 34, 186);
+    color: rgb(255, 255, 255);
+    border: 0 solid rgba(0,0,0,0);
+}
+
+/* section-6 */
+
+#buttonbylik
+{
+    width: 12vmin;
+    height: 6vmin;
+    border-radius: 2vmin;
+    background-color: rgb(255, 0, 195);
+    border: 0 solid rgba(0,0,0,0);
+    color: white
+}
+
+.zerobylik
+{
+    position: relative;
+    border: 0.4vmin solid rgba(255, 0, 195,1);
+    border-radius: 100vmin;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.bylik
+{
+    position: relative;
+    border: 0.4vmin solid rgba(255, 0, 195,1);
+    background-color: rgba(255, 0, 195,1);
+    border-radius: 100vmin;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+#bylik-1
+{
+    top: 0vmin;
+    left: -5vmin;
+    width: 1vmin;
+    height: 1vmin;
+    animation: bylikbylikzero infinite 1.5s;
+}
+
+#bylik-2
+{
+    top: 17vmin;
+    left: 5vmin;
+    width: 1vmin;
+    height: 1vmin;
+    animation: bylikbylik infinite 1.5s;
+}
+
+#bylik-3
+{
+    top: -25vmin;
+    left: -15vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    animation: bylikbylikzero infinite 1.5s;
+}
+
+#bylik-4
+{
+    top: 32vmin;
+    left: 23vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    animation: bylikbylik infinite 1.5s;
+}
+
+#bylik-5
+{
+    left: -35vmin;
+    width: 2vmin;
+    height: 2vmin;
+    animation: bylikbylikzero infinite 1.5s;
+}
+
+#bylik-6
+{
+    left: 35vmin;
+    width: 2vmin;
+    height: 2vmin;
+    animation: bylikbylik infinite 1.5s;
+}
+
+#bylik-7
+{
+    top: -20vmin;
+    left: -65vmin;
+    width: 2.5vmin;
+    height: 2.5vmin;
+    animation: bylikbylikzero infinite 1.5s;
+}
+
+#bylik-8
+{
+    top: 27vmin;
+    left: 65vmin;
+    width: 2.5vmin;
+    height: 2.5vmin;
+    animation: bylikbylik infinite 1.5s;
+}
+
+@keyframes bylikbylik
+{
+    from
+    {
+        border: 0.2vmin solid rgba(255, 0, 195,0);
+        background-color: rgba(255, 0, 195,0);
+        transform: scale(0);
+    }
+    10%
+    {
+        border: 0.2vmin solid rgba(255, 0, 195,1);
+        background-color: rgba(255, 0, 195,1);
+        transform: scale(0.25);
+    }
+    20%
+    {
+        transform: scale(0.5);
+    }
+    30% 
+    {
+        transform: scale(0.75);
+    }
+    40%
+    {
+        transform: scale(1);
+    }
+    50% 
+    {
+        transform: scale(1.25);
+    }
+    60%
+    {
+        transform: scale(1.5);
+    }
+    70%
+    {
+        transform: scale(1.75);
+    }
+    80%
+    {
+        transform: scale(2);
+    }
+    90%
+    {
+        transform: scale(2.25);
+    }
+    to
+    {
+        transform: scale(0);
+        border: 0.2vmin solid rgba(255, 0, 195,0);
+        background-color: rgba(255, 0, 195,0);
+    }
+}
+
+@keyframes bylikbylikzero
+{
+    from
+    {
+        border: 0.2vmin solid rgba(255, 0, 195,0);
+        transform: scale(0);
+    }
+    10%
+    {
+        border: 0.2vmin solid rgba(255, 0, 195,1);
+        transform: scale(0.25);
+    }
+    20%
+    {
+        transform: scale(0.5);
+    }
+    30% 
+    {
+        transform: scale(0.75);
+    }
+    40%
+    {
+        transform: scale(1);
+    }
+    50% 
+    {
+        transform: scale(1.25);
+    }
+    60%
+    {
+        transform: scale(1.5);
+    }
+    70%
+    {
+        transform: scale(1.75);
+    }
+    80%
+    {
+        transform: scale(2);
+    }
+    90%
+    {
+        transform: scale(2.25);
+    }
+    to
+    {
+        border: 0.2vmin solid rgba(255, 0, 195,0);
+        transform: scale(0);
+    }
+}
